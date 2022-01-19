@@ -3,7 +3,7 @@
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 
-from test import testForSmallUnweighted, testForRandomUnweighted1
+from test import testForSmallUnweighted
 from test import testForRandomUnweighted
 from naive_solver import NaiveSolver
 from graph import Graph
@@ -18,11 +18,4 @@ def print_hi(name):
 if __name__ == '__main__':
     testForSmallUnweighted()
     testForRandomUnweighted()
-    testForRandomUnweighted1()
-    # graph = Graph(3, adjacency_list=np.array([[1, 2], [2, 3]]))
-    # solv = NaiveSolver(graph)
-    # l, r, res = solv.solve()
-    #
-    # print(l)
-    # print(r)
-    # print(res)
+    testForRandomUnweighted(density=10)
